@@ -170,7 +170,7 @@ def team_names
   end
 end
 
-def player_numbers(team_name)
+def player_numbers(player_name)
    game_hash.each do |team, team_data|
     players_array = team_data[:players]
       players_array.each do |player_details_hash|
