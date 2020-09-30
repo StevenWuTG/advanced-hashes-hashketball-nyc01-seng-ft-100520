@@ -186,23 +186,10 @@ def player_numbers(team_name)
   player_numbers
 end
 
-# def player_stats(player_name)
-#   player_stats = {}
-#   game_hash.each do |team, team_data|
-#     team_data[:players].each do |stats|
-#       if stats[:player_name] == player_name
-#         stats.delete(:player_name)
-#         player_stats = stats
-#       end
-#     end
-#     player_stats
-#   end
-# end
-
 def player_stats(player_name)
   player_stats = {}
-  game_hash.each do |team, team_details_hash|
-    team_details_hash[:players].each do |stats|
+  game_hash.each do |team, team_data|
+    team_data[:players].each do |stats|
 
       if stats[:player_name] == player_name
         
