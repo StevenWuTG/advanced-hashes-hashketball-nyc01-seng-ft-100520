@@ -176,7 +176,7 @@ def player_numbers(player_name)
     players_array = team_data[:players]
       players_array.each do |player_details_hash|
         if player_details_hash[:player_name] == player_name
-          return player_details_hash[:shoe]
+          return player_details_hash[:number]
         end
       end
   end
