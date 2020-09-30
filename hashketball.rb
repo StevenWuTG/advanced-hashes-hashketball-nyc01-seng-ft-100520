@@ -164,4 +164,9 @@ def team_colors(team_name)
   end
 end
 
+def team_names
+  game_hash.collect do |team, team_data|
+    team_data[:team_name]
+  end
+end
 
